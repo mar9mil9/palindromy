@@ -11,3 +11,4 @@ def palindrom(word):
     print(reversed_word)
     return
 
+#zmiana
