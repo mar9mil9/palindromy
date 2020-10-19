@@ -17,7 +17,7 @@ def palindrom(word):
         list_reversed_word.append(leter_from_end)
         count = count + 1
 
-    if list_word == list_reversed_word
+    if list_word == list_reversed_word:
         print(f"{word} to palindrom")
     else:
         print(f"{word} nie jest palindromem")
