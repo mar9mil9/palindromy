@@ -1,10 +1,6 @@
 # Moduł 4
 # Zadanie 1
-'''
-list.reverse()
-list.index(x[, start[, end]])
 
-'''
 
 def palindrom(word):
     count = 1
@@ -16,11 +12,12 @@ def palindrom(word):
         list_word.append(leter_from_begining)
         list_reversed_word.append(leter_from_end)
         count = count + 1
-
     if list_word == list_reversed_word:
-        print(f"{word} to palindrom")
+        result = True
     else:
-        print(f"{word} nie jest palindromem")
-    return
+        result = False
+    return result
+
+
 
 print()
