@@ -7,15 +7,20 @@ list.index(x[, start[, end]])
 '''
 
 def palindrom(word):
-    #reversed_word = reversed(word)
-    #reversed_word = word.reverse()
-    #print(str(reversed_word))
     count = 1
+    list_reversed_word = []
+    list_word = []
     for leter in word:
-        first_to_equal = word[count - 1]
-        second_to_equal = word[-count]
-        print(f"pierwsza to {first_to_equal}, druga to {second_to_equal}")
+        leter_from_begining = word[count - 1]
+        leter_from_end= word[-count]
+        list_word.append(leter_from_begining)
+        list_reversed_word.append(leter_from_end)
         count = count + 1
+
+    if list_word == list_reversed_word
+        print(f"{word} to palindrom")
+    else:
+        print(f"{word} nie jest palindromem")
     return
 
 print()
